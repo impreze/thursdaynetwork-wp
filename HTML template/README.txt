@@ -1,0 +1,1 @@
+This directory contains the html design formats used for conversion to Wordpress theme format.

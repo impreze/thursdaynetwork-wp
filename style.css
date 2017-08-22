@@ -1,0 +1,361 @@
+/*Theme Name: SEB WP Theme
+Theme URI: https://sylvesterezeani.com/blog
+Description: A simple Wordpress theme for those who just want to post text, images, and media.
+Version: 1.0 or any other version you want
+Author: Sylvester Ezeani
+Author URI:  http://www.sylvesterezeani.com
+Tags: bootrap, responsive, sylvester, ezeani, mobile, minimal, free
+*/
+
+@import url('css/bootstrap.min.css');
+
+/*** COMMON STYLES ***/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+body {
+    padding-top: 50px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+h4,
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+a {
+    color: #ce0320;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/*** MEDIA STYLES ***/
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img.alignright {
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    display: inline;
+}
+img.alignleft {
+    padding: 4px;
+    margin: 0 7px 2px 0;
+    display: inline;
+}
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alignright {
+    float: right;
+}
+.alignleft {
+    float: left;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*** GENERAL PAGE STYLES ***/
+
+.page-wrapper {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.page-title,
+.post-title {
+    /* editing Bootstrap style */
+    border-bottom: 3px solid #ce0320;
+    padding-bottom: 10px;
+}
+
+/*** Index Page Styles ***/
+
+.jumbotron {
+    color: #ffffff;
+    position: relative;
+    background: #000 url("../images/header-bg.jpg") center center;
+    width: 100%;
+    min-height: 200px;
+    background-size: cover;
+    overflow: hidden;
+}
+.section-header {
+    padding-bottom: 20px;
+}
+.section-header h3 {
+    border-bottom: 3px solid #ce0320;
+    display: inline-block;
+}
+@media(min-width:767px) {
+    .navbar {
+        padding: 15px 0;
+    }
+}
+
+/** Header/Jumbotron **/
+
+#header-section {
+    background-color: #fff;
+    padding-top: 40px;
+}
+#header-section img {
+    width: 100%;
+    height: auto;
+}
+
+/** Welcome Section **/
+
+#welcome-section {
+    padding-top: 40px;
+    padding-bottom: 75px;
+    background: #fff;
+}
+
+/** About Section **/
+
+#about-section {
+    padding-top: 40px;
+    padding-bottom: 75px;
+    background: #212121;
+    color: #fff;
+}
+
+/** Recent News Section **/
+
+#recent-news-section {
+    padding-top: 40px;
+    padding-bottom: 75px;
+    background: #ddd;
+}
+.news-item {
+    background-color: #ffffff;
+    min-height: 200px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.news-item-img img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+.news-item-meta {
+    height: 25px;
+}
+.news-item-title {
+    color: #ce0320;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.news-item-excerpt {
+    padding-top: 5px;
+}
+.more-news {
+    padding-top: 25px;
+}
+
+/** Support Section **/
+
+#support-section {
+    padding-top: 40px;
+    padding-bottom: 75px;
+    background: #ffffff;
+    color: #000;
+}
+
+/** Media changes for Index Page **/
+
+@media only screen and (min-device-width: 991px) and (max-device-width: 1199px) {
+    .news-item-img {}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 990px) {
+    header-section {}
+    .news-item-img {
+        min-height: 300px;
+    }
+}
+@media only screen and (max-device-width: 767px) {
+    .jumbotron {
+        height: 200px;
+    }
+    #welcome-section,
+    #about-section,
+    #recent-news-section,
+    #support-section {
+        min-height: 600px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        font-size: 14px;
+    }
+    #welcome-section .content-padding {
+        padding-bottom: 20px;
+    }
+    #about-section .content-padding {
+        padding-top: 20px;
+    }
+}
+
+/*** LEADERSHIP PAGE STYLES ***/
+
+#leadership-page .thumbnail {
+    min-height: 450px;
+}
+#leadership-page .thumbnail img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    max-height: 300px;
+    padding: 10px;
+}
+
+/*** BLOG NEWS PAGE STYLES ***/
+
+.post-item {
+    padding: 20px;
+}
+
+/*** FOOTER SECTION ***/
+
+#footer-section {
+    padding: 15px;
+    background-color: #212121;
+    color: #717489;
+    font-size: 12px;
+}
+.widget-area {
+    min-height: 200px;
+}
+.widget-area a,
+.widget-area a:visited {
+    color: #cccccc;
+}
+.footer-content {
+    text-align: center;
+    color: #fff;
+}
+.widget {
+    margin-bottom: 5px;
+}
+
+/*** CUSTOM BOOTSTRAP NAVBAR ***/
+
+.navbar-default {
+    background-color: #ffffff;
+    /*border-color: #ffffff;*/
+}
+.navbar-default .navbar-brand {
+    color: #212121;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar-default .navbar-brand .red-network {
+    color: #ce0320;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    transform: translateX(10px);
+}
+.navbar-default .navbar-text {
+    color: #212121;
+}
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: #212121;
+    font-size: 13px;
+}
+.navbar-default .navbar-nav > li > a {
+    font-size: 13px;
+    color: #212121;
+    transition: all 0.3s ease;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ce0320;
+    transform: translateY(-5px);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ce0320;
+    background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ce0320;
+    background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+    /*border-color: #212121;*/
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #212121;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #212121;
+}
+.navbar-default .navbar-link {
+    color: #212121;
+}
+.navbar-default .navbar-link:hover {
+    color: #ce0320;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #212121;
+        font-size: 13px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ce0320;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ce0320;
+        background-color: #ffffff;
+    }
+}
